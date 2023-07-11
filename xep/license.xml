@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license issuer="RenderX" issued="2008-09-07">
+   <licensee>
+      <person>Stephen Taylor sjt@5jt.com</person>
+      <organization/>
+   </licensee>
+   <product name="XEP">
+      <limit name="desktop">1</limit>
+   </product>
+   <product name="Fo2Html">
+      <limit name="full">1</limit>
+   </product>
+<signature>iQBVAgUASMOqOvz8zkdesEfDAQETswH/R5L4Rcw/a1fXkvdGtMEbVlYoOEBz+QcX
+TJ8Sbyjvtoron11tmAYg+6XoNCUw+uPYEjwej7dyA7a2xk6KJDxKCw===ZNd4</signature></license>
