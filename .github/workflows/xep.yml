@@ -16,5 +16,11 @@ jobs:
     env:
       CLASSPATH: "lib:lib/saxon6.5.5"
     steps:
-      - name: Confirm Java home path
+      # Use Java 8 for XEP
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: semeru
+          java-version: 8      
+      - name: Confirm Java paths
         run: echo "JAVA_HOME=$JAVA_HOME; CLASSPATH=$CLASSPATH"
