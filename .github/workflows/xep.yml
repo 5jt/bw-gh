@@ -1,0 +1,20 @@
+name: Confirm environment for RenderX XEP
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Confirm Java
+  test-java:
+    runs-on: ubuntu-latest
+    # env:
+    #   XEP_HOME: xep
+    steps:
+      - name: Confirm Java home path
+        run: echo "JAVA_HOME=$JAVA_HOME; CLASSPATH=$CLASSPATH"
