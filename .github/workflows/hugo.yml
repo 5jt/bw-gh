@@ -64,7 +64,6 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./hugo/public
-          # path: ./public
 
   # Deployment job
   deploy:
