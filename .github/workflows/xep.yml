@@ -13,8 +13,8 @@ jobs:
   # Confirm Java
   test-java:
     runs-on: ubuntu-latest
-    # env:
-    #   XEP_HOME: xep
+      env:
+      CLASSPATH: 'lib;lib/saxon6.5.5'
     steps:
       - name: Confirm Java home path
         run: echo "JAVA_HOME=$JAVA_HOME; CLASSPATH=$CLASSPATH"
