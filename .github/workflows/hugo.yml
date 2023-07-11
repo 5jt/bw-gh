@@ -75,6 +75,5 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages
-        working-directory: hugo
         id: deployment
         uses: actions/deploy-pages@v2
