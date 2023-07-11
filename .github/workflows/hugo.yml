@@ -43,12 +43,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           submodules: recursive
+      - name: Change to 'hugo' directory
+        run: cd hugo
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Build with Hugo
+        working-directory: hugo
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
@@ -60,7 +63,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./public
+          path: ./hugo/public
+          # path: ./public
 
   # Deployment job
   deploy:
