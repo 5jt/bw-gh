@@ -13,7 +13,7 @@ jobs:
   # Confirm Java
   test-java:
     runs-on: ubuntu-latest
-      env:
+    env:
       CLASSPATH: "lib:lib/saxon6.5.5"
     steps:
       - name: Confirm Java home path
