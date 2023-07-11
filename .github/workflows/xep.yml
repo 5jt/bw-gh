@@ -1,8 +1,16 @@
 name: Confirm environment for RenderX XEP
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch
+
+env:
+  XEP_HOME: xep
+  CP: >
+    $JAVA_HOME/lib/tools.jar:
+    $XEP_HOME/lib/xep.jar:
+    $XEP_HOME/lib/saxon6.5.5/saxon.jar:
+    $XEP_HOME/lib/saxon6.5.5/saxon-xml-apis.jar:
+    $XEP_HOME/lib/xt.jar
 
 # Default to bash
 defaults:
@@ -13,8 +21,6 @@ jobs:
   # Confirm Java
   test-java:
     runs-on: ubuntu-latest
-    env:
-      CLASSPATH: "lib:lib/saxon6.5.5"
     steps:
       # Use Java 8 for XEP
       - name: Set up Java
@@ -22,5 +28,5 @@ jobs:
         with:
           distribution: semeru
           java-version: 8      
-      - name: Confirm Java paths
-        run: echo "JAVA_HOME=$JAVA_HOME; CLASSPATH=$CLASSPATH"
+      - name: Confirm classpath
+        run: echo "CLASSPATH=$CP"
