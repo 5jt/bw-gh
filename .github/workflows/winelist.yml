@@ -29,4 +29,4 @@ jobs:
         working-directory: winelist
         env: 
           XEP_HOME: ../xep
-        run: render.sh
+        run: sh render.sh
