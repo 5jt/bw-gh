@@ -19,10 +19,12 @@ jobs:
         with:
           distribution: semeru
           java-version: 8
-      - name: Confirm Java version
-        run: java --version
       - name: Locate Java 
         run: echo "$JAVA_HOME"
+      - name: Checkout 
+        run: actions/checkout@v3
+        with:
+          submodules: recursive
       - name: Run XEP to make PDF
         env: 
           XEP_HOME: xep
