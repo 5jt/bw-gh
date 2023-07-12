@@ -19,8 +19,6 @@ jobs:
         with:
           distribution: semeru
           java-version: 8
-      - name: Confirm Java version
-        run: java --version
       - name: Locate Java 
         run: echo "$JAVA_HOME"
       - name: Run XEP to make PDF
