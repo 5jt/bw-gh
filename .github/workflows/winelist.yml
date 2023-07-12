@@ -21,8 +21,8 @@ jobs:
           java-version: 8
       - name: Locate Java 
         run: echo "$JAVA_HOME"
-      - name: Checkout 
-        run: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           submodules: recursive
       - name: Run XEP to make PDF
