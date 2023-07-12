@@ -1,0 +1,29 @@
+name: Render winelist PDF from XML
+
+on:
+  workflow_dispatch
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Confirm Java
+  regenerate-winelist:
+    runs-on: ubuntu-latest
+    steps:
+      # Use Java 8 for XEP
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: semeru
+          java-version: 8
+      - name: Confirm Java version
+        run: java --version
+      - name: Locate Java 
+        run: echo "$JAVA_HOME"
+      - name: Run XEP to make PDF
+        env: 
+          XEP_HOME: xep
+        run: ./winelist/render.sh
