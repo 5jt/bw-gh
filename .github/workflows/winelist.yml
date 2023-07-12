@@ -26,6 +26,7 @@ jobs:
         with:
           submodules: recursive
       - name: Run XEP to make PDF
+        working-directory: winelist
         env: 
-          XEP_HOME: xep
-        run: ./winelist/render.sh
+          XEP_HOME: ../xep
+        run: render.sh
