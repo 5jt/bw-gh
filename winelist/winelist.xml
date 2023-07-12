@@ -154,7 +154,7 @@
 					promising more complexity and a long life ahead (<bottleprice/> a bottle).
 				</description>
 			</wine>
-    		<wine>
+    		        <wine>
 				<name>Sauvignon Blanc 2021 <domain>Rapaura Springs</domain></name>
 				<caseprice>74.04</caseprice>
 				<description>
@@ -244,7 +244,7 @@
 			</wine>
 			<wine>
 			  <name>Falerio 2020 <domain>Saladini Pilastri</domain></name>
-		        <caseprice>47.40</caseprice>
+		          <caseprice>47.40</caseprice>
 		        <description>
 		          This tasty blend of Trebbiano, Passerina and Pecorino grapes comes
 		          from the 300 year-old organic estate of <person>Count Saladini Pilastri</person> in The Marche region
@@ -601,7 +601,7 @@
 				<description>
 					While the ‘Quartet’ has long been a favourite, it was only on my last visit to Roederer Estate
 					in 2018 that I discovered their fantastic sparkling rosé. A classic blend of 60% Pinot Noir and 40% Chardonnay, 
-					it has a seductive salmon pink colour, delicate floral, peach and red berry aromas, and crisp acidity. Like its sister 
+					it has a seductive salmon-pink colour, delicate floral, peach and red berry aromas, and crisp acidity. Like its sister 
 					wine, it has won countless awards. Enjoy it on its own as a festive aperitif or with light starters and main courses (<bottleprice/> a bottle).
 				</description>
 			</wine>
