@@ -215,7 +215,7 @@
     
     <!-- Sample configuration for Windows TrueType fonts.  -->
 
-    <font-group xml:base="file:../xep/extrafonts" label="Windows TrueType" embed="true" subset="true"> 
+    <font-group xml:base="file:../xep/extrafonts/" label="Windows TrueType" embed="true" subset="true"> 
 
 <!--       <font-family name="APL385 Unicode">
         <font><font-data ttf="apl385.ttf"/></font>
