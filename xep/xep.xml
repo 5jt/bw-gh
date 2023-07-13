@@ -215,8 +215,9 @@
     
     <!-- Sample configuration for Windows TrueType fonts.  -->
 
-    <font-group xml:base="file:/Users/sjt/Library/Fonts/" label="Windows TrueType" embed="true" subset="true"> 
-      <font-family name="APL385 Unicode">
+    <font-group xml:base="file:../xep/extrafonts" label="Windows TrueType" embed="true" subset="true"> 
+
+<!--       <font-family name="APL385 Unicode">
         <font><font-data ttf="apl385.ttf"/></font>
       </font-family>
 
@@ -261,13 +262,13 @@
         <font weight="bold"><font-data ttf="Courier New Bold.ttf"/></font>
         <font weight="bold" style="oblique"><font-data ttf="Courier New Bold Italic.ttf"/></font>
       </font-family>
-
+ -->
       <font-family embed="true" name="ETBembo">
         <font><font-data ttf="et-book-roman-old-style-figures.ttf"/></font>
         <font style="italic"><font-data ttf="et-book-display-italic-old-style-figures.ttf"/></font>
         <font weight="bold"><font-data ttf="et-book-bold-line-figures.ttf"/></font>
       </font-family>
-
+<!-- 
       <font-family embed="true" name="Garamond">
         <font><font-data ttf="gara.ttf"/></font>
         <font style="italic"><font-data ttf="garait.ttf"/></font>
@@ -284,14 +285,14 @@
       <font-family embed="true" name="Lucida Console">
         <font><font-data ttf="Lucida Console Regular.ttf"/></font>
       </font-family>
-
+ -->
       <font-family embed="true" name="Lucida Sans">
         <font><font-data ttf="lsans.ttf"/></font>
         <font style="italic"><font-data ttf="lsansi.ttf"/></font>
         <font weight="bold"><font-data ttf="lsansd.ttf"/></font>
         <font style="italic" weight="bold"><font-data ttf="lsansdi.ttf"/></font>
       </font-family>
-
+<!-- 
       <font-family embed="true" name="Material Icons">
         <font><font-data ttf="MaterialIcons-Regular.ttf"/></font>
       </font-family>
@@ -339,7 +340,7 @@
         <font weight="bold"><font-data ttf="verdanab.ttf"/></font>
         <font weight="bold" style="oblique"><font-data ttf="verdanaz.ttf"/></font>
       </font-family>
-
+ -->
     </font-group>
     
     <!-- Required aliases -->      
