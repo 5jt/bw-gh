@@ -30,9 +30,9 @@ jobs:
         # Required mail subject:
         subject: Github Actions email test 
         # Required recipients' addresses:
-        to: sjt@5jt.com
+        to: stephentaylorfrsa@gmail.com
         # Required sender full name (address can be skipped):
-        from: sjt@lambenttechnology.com # <user@example.com>
+        from: sjt@5jt.com # <user@example.com>
         # Optional plain body:
         body: Build job of ${{github.repository}} completed successfully!
         # Optional HTML body read from file:
