@@ -3,7 +3,7 @@ name: Send an email message
 on: [workflow_dispatch]
 
 jobs:
-  build:
+  send:
     runs-on: ubuntu-latest
     steps:
     - name: Send message
@@ -16,18 +16,17 @@ jobs:
         #
         #  * smtp://user:password@server:port
         #  * smtp+starttls://user:password@server:port
-        # connection_url: ${{secrets.MAIL_CONNECTION}}
+        connection_url: ${{secrets.MAIL_CONNECTION}}
         # Required mail server address if not connection_url:
         # server_address: smtp.gmail.com
-        server_address: smtp.livemail.co.uk # ${{secrets.MAIL_SERVER}}
         # Server port, default 25:
         # server_port: 465
         # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: true
         # Optional (recommended) mail server username:
-        username: sjt@lambenttechnology.com # ${{secrets.MAIL_USERNAME}}
+        # username: ${{secrets.MAIL_USERNAME}}
         # Optional (recommended) mail server password:
-        password: ${{secrets.MAIL_PASSWORD}}
+        # password: ${{secrets.MAIL_PASSWORD}}
         # Required mail subject:
         subject: Github Actions job result
         # Required recipients' addresses:
@@ -38,7 +37,7 @@ jobs:
         # body: Build job of ${{github.repository}} completed successfully!
         # Optional HTML body read from file:
         # html_body: file://README.html
-        html_body: file://email-body.html
+        html_body: file://.github/workflows/email-body.html
         # Optional carbon copy recipients:
         # cc: kyloren@example.com,leia@example.com
         # Optional blind carbon copy recipients:
