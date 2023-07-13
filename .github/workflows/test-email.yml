@@ -28,7 +28,7 @@ jobs:
         # Optional (recommended) mail server password:
         # password: ${{secrets.MAIL_PASSWORD}}
         # Required mail subject:
-        subject: Github Actions job result
+        subject: Github Actions email test 
         # Required recipients' addresses:
         to: sjt@5jt.com
         # Required sender full name (address can be skipped):
@@ -37,7 +37,7 @@ jobs:
         # body: Build job of ${{github.repository}} completed successfully!
         # Optional HTML body read from file:
         # html_body: file://README.html
-        html_body: file://.github/workflows/email-body.html
+        html_body: file://email-body.html
         # Optional carbon copy recipients:
         # cc: kyloren@example.com,leia@example.com
         # Optional blind carbon copy recipients:
