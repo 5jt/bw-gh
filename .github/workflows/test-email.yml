@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Send message
-      working_directory: email
+      working-directory: email
       uses: dawidd6/action-send-mail@v3.7.2
       with:
         # Specify connection via URL (replaces server_address, server_port, secure,
