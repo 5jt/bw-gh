@@ -13,8 +13,8 @@
 	-->
 	<vatrate>20</vatrate><!-- % -->
 	<duty><!-- duty per dozen, ie per case -->
-		<still>26.76</still>
-		<sparkling>34.32</sparkling>
+		<still>32.04</still>
+		<sparkling>32.04</sparkling>
 	</duty>
 	<!--
 			pricebreak is breakpoint in the retail bottle price that divides
