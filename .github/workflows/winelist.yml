@@ -2,6 +2,8 @@ name: Update winelist
 
 on:
   workflow_dispatch
+  push:
+    branches: ["main"]
 
 # Default to bash
 defaults:
