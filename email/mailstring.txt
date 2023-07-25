@@ -1,0 +1,1 @@
+smtp+starttls://sjt@5jt.com:Francesco$Guicciardini@smtp.livemail.co.uk:465
